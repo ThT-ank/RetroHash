@@ -6,7 +6,7 @@ Display functions for results
 def display_game_info(game_info: dict):
     """
     Display game information
-    
+
     Args:
         game_info: Dictionary containing game information
     """
@@ -23,21 +23,21 @@ def display_game_info(game_info: dict):
 def display_supported_hashes(hashes: list):
     """
     Display supported versions (hashes)
-    
+
     Args:
         hashes: List of hashes
     """
     print("\n=== SUPPORTED VERSIONS (Hashes) ===\n")
-    
+
     if hashes:
         for i, hash_info in enumerate(hashes, 1):
             print(f"\n{i}. {hash_info.get('Name', 'N/A')}")
             print(f"   MD5: {hash_info.get('MD5', 'N/A')}")
-            
+
             labels = hash_info.get('Labels', [])
             if labels:
                 print(f"   Labels: {', '.join(labels)}")
-            
+
             patch_url = hash_info.get('PatchUrl')
             if patch_url:
                 print(f"   Patch: {patch_url}")
@@ -48,16 +48,16 @@ def display_supported_hashes(hashes: list):
 def display_search_results(matches: list):
     """
     Display search results
-    
+
     Args:
         matches: List of games found
     """
     if not matches:
         print("❌ No game found with this name")
         return None
-    
+
     print(f"✅ {len(matches)} game(s) found:\n")
     for game in matches:
         print(f"  - {game['Title']} (ID: {game['ID']})")
-    
+
     return matches[0]

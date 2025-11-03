@@ -1,0 +1,29 @@
+[MAIN]
+# Python code to execute, usually for sys.path manipulation
+init-hook='import sys; sys.path.append(".")'
+
+[MESSAGES CONTROL]
+# Disable specific warnings that are not critical for this project
+disable=
+    too-many-locals,
+    too-many-branches,
+    too-many-statements,
+    too-many-nested-blocks,
+    import-outside-toplevel
+
+[FORMAT]
+# Maximum number of characters on a single line
+max-line-length=100
+
+[DESIGN]
+# Maximum number of locals for function / method body
+max-locals=35
+
+# Maximum number of branch for function / method body
+max-branches=30
+
+# Maximum number of statements in function / method body
+max-statements=90
+
+# Maximum number of nested blocks for function / method body
+max-nested-blocks=8
