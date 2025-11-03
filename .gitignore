@@ -1,0 +1,29 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Output files
+data/
+alln64/
+roms/
+
+# Credentials
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
