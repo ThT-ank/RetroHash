@@ -98,7 +98,7 @@ This script:
 ## Project Structure
 
 ```
-retroachie/
+RetroHash/
 ├── retroachievements/
 │   ├── __init__.py            # Main package
 │   ├── client.py              # API client
